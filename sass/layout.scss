@@ -4938,6 +4938,17 @@
   .mobile_detail {
     width: $fullSize !important;
   }
+  // footer
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: $fullSize;
+    padding: $dPd16;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
 }
 
 .app.show-menu {

@@ -7159,6 +7159,17 @@ input[type='checkbox']:checked
   width: 100% !important;
 }
 
+.wrap .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
 .app.show-menu #main-container {
   position: fixed;
   width: 100%;
