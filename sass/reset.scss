@@ -1,0 +1,222 @@
+@charset "utf-8";
+@import 'variable.scss';
+@import 'mixin.scss';
+
+// base
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.5px;
+  -webkit-overflow-scrolling: touch;
+}
+* {
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+hr {
+  display: block;
+  margin: 15px 0;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+legend,
+input,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  letter-spacing: -0.5px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+fieldset,
+img {
+  border: none;
+  vertical-align: middle;
+}
+hr,
+button img {
+  display: none;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  empty-cells: show;
+}
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+input {
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  &:disabled {
+    opacity: 1;
+  }
+}
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #ebebe4;
+  -webkit-text-fill-color: #000;
+}
+input:-moz-read-only {
+  /* For Firefox */
+  background-color: #ebebe4 !important;
+}
+
+input:read-only {
+  background-color: #ebebe4 !important;
+}
+select {
+  height: 23px;
+  line-height: 23px;
+}
+textarea {
+  padding: 0 5px;
+  color: #2d2d2d;
+  resize: none;
+}
+h2 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+// html5
+address,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+html {
+  font-family: $mainFonts;
+  font-size: $fontSize14;
+}
+body {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  font-family: $mainFonts;
+  font-size: $fontSize13 !important;
+  // @include border-radius(0);
+}
+input {
+  line-height: normal;
+}
+select {
+  width: $fullSize;
+  border: none;
+  background-image: url('../img/select_arrow.png') !important;
+  background-size: 20px 35px;
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-color: #fff;
+}
+a {
+  @include transition(0.3s);
+  &.link {
+    text-decoration: underline;
+  }
+}
+
+// 체크박스, 라디오버튼 css
+input[type='checkbox'] {
+  display: inline-block;
+  width: 17px !important;
+  height: 17px !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  vertical-align: middle;
+  background-image: url('../img/btn_check.png');
+  background-position: 0 0;
+  background-size: cover;
+  cursor: pointer;
+  background-color: #fff;
+  &:active,
+  &:checked {
+    background-image: url('../img/btn_check_pressed.png');
+  }
+}
+input[type='radio'] {
+  display: inline-block;
+  width: 17px !important;
+  height: 17px !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  vertical-align: middle;
+  background-image: url('../img/btn_radio_nomal.png');
+  background-position: 0 0;
+  background-size: cover;
+  cursor: pointer;
+  background-color: #fff;
+  &:active,
+  &:checked {
+    background-image: url('../img/btn_radio_pressed.png');
+  }
+}
+input:focus {
+  outline: none !important;
+}

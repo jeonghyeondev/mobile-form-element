@@ -1,0 +1,940 @@
+<!doctype html>
+<head>
+ <title>Form Layout</title>
+ <meta charset="utf-8">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=dege;">
+ <meta name="viewport"
+  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ <meta name="format-detection" content="telephone=no">
+ <link rel="stylesheet" href="../css/common.css">
+ <script src="../js/jquery-1.11.0.js"></script>
+ <script src="../js/html5shiv.js"></script>
+ <script src="../js/common.js"></script>
+</head>
+<body>
+ <div class="wrap">
+  <header class="header">
+   <div class="header_wrap">
+    <div class="header_menu">
+     <a href="javascript:;">
+      <img src="../img/img_menu.png" alt="메뉴">
+     </a>
+    </div>
+    <h1 class="header_tit">
+     <a href="../index.html">
+      FORM LAYOUT
+     </a>
+    </h1>
+   </div>
+   <div class="nav">
+    <div class="nav_wrap">
+     <div class="nav_user">
+      <div class="user_inner">
+       <div class="user_name">
+        <span class="user_company">Company</span>
+        <i class="ic_uesr"></i> 관리자 (admin)
+       </div>
+      </div>
+      <div class="nav_close">
+       <a href="javascript:;">
+        <img src="../img/gnb_btn_close.png" alt="메뉴닫기">
+       </a>
+      </div>
+     </div>
+     <div class="nav_btn">
+      <ul>
+       <li>
+        <a href="javascript:;"><i class="ic_logout"></i>로그아웃</a>
+       </li>
+       <li>
+        <a href="javascript:;"><i class="ic_refresh"></i>회원정보수정</a>
+       </li>
+      </ul>
+     </div>
+     <div class="nav_menu">
+      <ul class="nav_menu_list">
+       <li>
+        <a class="two_menu" href="#">MENU1</a>
+        <ul class="nav_sub_list">
+         <li><a href="javascript:;">SUBMENU1</a></li>
+         <li><a href="javascript:;">SUBMENU2</a></li>
+        </ul>
+       </li>
+       <li>
+        <a class="two_menu" href="#">MENU2</a>
+        <ul class="nav_sub_list">
+         <li><a href="javascript:;">SUBMENU1</a></li>
+         <li><a href="javascript:;">SUBMENU2</a></li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="nav_bg"></div>
+   </div>
+  </header>
+		<div class="btn_top none">
+			<a href="">
+				<img src="../img/btn_top.png" alt="위로">
+			</a>
+		</div>
+		<section class="content">
+			<div class="notice" style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+				INPUT LAYOUT
+			</div>
+			<!-- input start -->
+			<div class="form_wrap">
+				<ul>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1;"> ※ input1</p>
+						<div class="in_box1">
+							<div class="in_tit">
+								input한줄 <span>*</span>
+							</div>
+							<div class="in_type1" id="">
+								<input type="text" value="" placeholder="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input 1 / button 1</p>
+						<div class="in_box6">
+							<div class="in_tit">
+								한줄버튼 <span>*</span>
+							</div>
+							<div class="in_type2 cursor" onclick="">
+								<input type="text" id="" placeholder="">
+								<a href="javascript:;">
+									<img src="../img/btn_search.png" alt="검색">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ 타이틀 2줄</p>
+						<div class="in_box6">
+							<div class="in_tit tit_custom1">
+								타이틀이<br>길시 <span>*</span>
+							</div>
+							<div class="in_type2 cursor" onclick="">
+								<input type="text" id="" placeholder="">
+								<a href="javascript:;">
+									<img src="../img/btn_search.png" alt="검색">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input2</p>
+						<div class="in_box5">
+							<div class="in_custom1">
+								<div class="in_tit">
+									1번째
+								</div>
+								<div class="in_type1">
+									<input type="hidden" id="STATUS" value="">
+									<input type="text" id="STATUS_NM" value="">
+								</div>
+							</div>
+							<div class="in_custom1">
+								<div class="in_tit tac">
+									2번째
+								</div>
+								<div class="in_type1">
+									<input type="hidden" id="STATUS" value="">
+									<input type="text" id="STATUS_NM" value="">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input2 / button1</p>
+						<div class="in_box5">
+							<div class="in_custom1">
+								<div class="in_tit">
+									1번째
+								</div>
+								<div class="in_type2 cursor">
+									<input type="text" class="" id="" value="2999-12-12">
+									<a href="javascript:;">
+										<img src="../img/btn_search.png" alt="검색">
+									</a>
+								</div>
+							</div>
+							<div class="in_custom1">
+								<div class="in_tit tac">
+									2번째
+								</div>
+								<div class="in_type1">
+									<input type="hidden" id="" value="">
+									<input type="text" id="" value="">
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input2 / button1</p>
+						<div class="in_box5">
+							<div class="in_custom1">
+								<div class="in_tit">
+									1번째
+								</div>
+								<div class="in_type1">
+									<input type="hidden" id="" value="">
+									<input type="text" id="" value="">
+								</div>
+							</div>
+							<div class="in_custom1">
+								<div class="in_tit tac">
+									2번째
+								</div>
+								<div class="in_type2 cursor">
+									<input type="text" class="" id="" value="2999-12-12">
+									<a href="javascript:;">
+										<img src="../img/btn_search.png" alt="검색">
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input2 / button2</p>
+						<div class="in_box5">
+							<div class="in_custom1">
+								<div class="in_tit">
+									1번째
+								</div>
+								<div class="in_type2 cursor">
+									<input type="text" class="" id="" value="2999-12-12">
+									<a href="javascript:;">
+										<img src="../img/btn_search.png" alt="검색">
+									</a>
+								</div>
+							</div>
+							<div class="in_custom1">
+								<div class="in_tit tac">
+									2번째
+								</div>
+								<div class="in_type2 cursor">
+									<input type="text" class="" id="" value="2999-12-12">
+									<a href="javascript:;">
+										<img src="../img/btn_search.png" alt="검색">
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ calendar</p>
+						<div class="in_box1">
+							<div class="in_tit">
+								날짜
+							</div>
+							<div class="in_mid_box">
+								<div class="in_type2 cursor">
+									<input type="text" value="2000-00-00" placeholder="">
+									<a href="javascript:;">
+										<img src="../img/img_day.png" alt="달력">
+									</a>
+								</div>
+								<span>
+									~
+								</span>
+								<div class="in_type2 cursor">
+									<input type="text" value="2000-00-00" placeholder="">
+									<a href="javascript:;">
+										<img src="../img/img_day.png" alt="달력">
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ 검색</p>
+						<div class="in_box4">
+							<div class="in_tit">
+								지역
+							</div>
+							<div class="in_mid_list2">
+								<ul>
+									<li class="w60">
+										<div class="in_type2 cursor">
+											<input type="text" value="전체" placeholder="">
+											<a href="javascript:;">
+            <img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</li>
+									<li class="w40">
+										<select id="AGENDA_START" value="0130" onclick="">
+											<option value="">선택</option>
+											<option value="0000">00:00</option>
+											<option value="0030">00:30</option>
+											<option value="0100">01:00</option>
+											<option value="0130">01:30</option>
+											<option value="0200">02:00</option>
+											<option value="0230">02:30</option>
+											<option value="0300">03:00</option>
+											<option value="0330">03:30</option>
+											<option value="0400">04:00</option>
+											<option value="0430">04:30</option>
+											<option value="0500">05:00</option>
+											<option value="0530">05:30</option>
+											<option value="0600">06:00</option>
+											<option value="0630">06:30</option>
+											<option value="0700">07:00</option>
+											<option value="0730">07:30</option>
+											<option value="0800">08:00</option>
+											<option value="0830">08:30</option>
+											<option value="0900">09:00</option>
+											<option value="0930">09:30</option>
+											<option value="1000">10:00</option>
+											<option value="1030">10:30</option>
+											<option value="1100">11:00</option>
+											<option value="1130">11:30</option>
+											<option value="1200">12:00</option>
+											<option value="1230">12:30</option>
+											<option value="1300">13:00</option>
+											<option value="1330">13:30</option>
+											<option value="1400">14:00</option>
+											<option value="1430">14:30</option>
+											<option value="1500">15:00</option>
+											<option value="1530">15:30</option>
+											<option value="1600">16:00</option>
+											<option value="1630">16:30</option>
+											<option value="1700">17:00</option>
+											<option value="1730">17:30</option>
+											<option value="1800">18:00</option>
+											<option value="1830">18:30</option>
+											<option value="1900">19:00</option>
+											<option value="1930">19:30</option>
+											<option value="2000">20:00</option>
+											<option value="2030">20:30</option>
+											<option value="2100">21:00</option>
+											<option value="2130">21:30</option>
+											<option value="2200">22:00</option>
+											<option value="2230">22:30</option>
+											<option value="2300">23:00</option>
+											<option value="2330">23:30</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select1</p>
+						<div class="in_box2">
+							<div class="in_tit">
+								select
+							</div>
+							<div class="in_type1">
+								<select name="" id="">
+									<option value="">전체</option>
+								</select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select2</p>
+						<div class="in_box5">
+							<div class="in_custom1">
+								<div class="in_tit">
+									1번째
+								</div>
+								<div class="in_type1">
+									<select name="" id="">
+										<option value="">구분</option>
+									</select>
+								</div>
+							</div>
+							<div class="in_custom1">
+								<div class="in_tit tac">
+									2번째
+								</div>
+								<div class="in_type1">
+									<select name="" id="">
+										<option value="">구분</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select3</p>
+						<div class="in_box4">
+							<div class="in_tit">
+								지역
+							</div>
+							<div class="in_mid_list">
+								<ul>
+									<li>
+										<select name="" id="">
+											<option value="" selected="selected">시도</option>
+											<option value="강원">강원</option>
+											<option value="경기">경기</option>
+											<option value="경남">경남</option>
+											<option value="경북">경북</option>
+											<option value="광주">광주</option>
+											<option value="대구">대구</option>
+											<option value="대전">대전</option>
+											<option value="부산">부산</option>
+											<option value="서울">서울</option>
+											<option value="세종시">세종시</option>
+											<option value="울산">울산</option>
+											<option value="인천">인천</option>
+											<option value="전남">전남</option>
+											<option value="전북">전북</option>
+											<option value="제주">제주</option>
+											<option value="충남">충남</option>
+											<option value="충북">충북</option>
+										</select>
+									</li>
+									<li>
+										<select name="" id="">
+											<option value="">시군구</option>
+										</select>
+									</li>
+									<li>
+										<select name="" id="">
+											<option value="">동</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio1</p>
+						<div class="in_box6">
+							<div class="in_tit">
+								radio <span>*</span>
+							</div>
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio2</p>
+						<div class="in_box6">
+							<div class="in_tit">
+        radio <span>*</span>
+							</div>
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio3</p>
+						<div class="in_box6">
+							<div class="in_tit">
+        radio <span>*</span>
+							</div>
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check1</p>
+						<div class="in_box6">
+							<div class="in_tit">
+								checkbox <span>*</span>
+							</div>
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check2</p>
+						<div class="in_box6">
+							<div class="in_tit">
+        checkbox <span>*</span>
+							</div>
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check3</p>
+						<div class="in_box6">
+							<div class="in_tit">
+        checkbox <span>*</span>
+							</div>
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">N</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input full width</p>
+						<div class="in_box_all">
+							<ul>
+								<li>
+									<div class="in_type1">
+										<input type="text" id="" value="">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input half width</p>
+						<div class="in_box_all2">
+							<ul>
+								<li>
+									<div class="in_type1">
+										<input type="text" id="" value="">
+									</div>
+								</li>
+								<li>
+									<div class="in_type2 cursor">
+										<input type="text" id="" placeholder="">
+										<a href="javascript:;">
+											<img src="../img/btn_search.png" alt="검색">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ input quota width</p>
+						<div class="in_box_all3">
+							<ul>
+								<li>
+									<div class="in_type1">
+										<input type="text" id="" value="">
+									</div>
+								</li>
+								<li>
+									<div class="in_type2 cursor">
+										<input type="text" id="" placeholder="">
+										<a href="javascript:;">
+											<img src="../img/btn_search.png" alt="검색">
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="in_type1">
+										<input type="text" id="" value="">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select full width</p>
+						<div class="in_box_all">
+							<ul>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select half width</p>
+						<div class="in_box_all2">
+							<ul>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ select quota width</p>
+						<div class="in_box_all3">
+							<ul>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+								<li>
+									<select name="" id="">
+										<option value="">전체</option>
+										<option value="">전체</option>
+										<option value="">전체</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check full width</p>
+						<div class="in_box_all">
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check half width</p>
+						<div class="in_box_all">
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ check quota width</p>
+						<div class="in_box_all">
+							<div class="in_check">
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+								<div class="in_chk">
+									<input type="checkbox" id="chk" name="" value="">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio full width</p>
+						<div class="in_box_all">
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio half width</p>
+						<div class="in_box_all">
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ radio quota width</p>
+						<div class="in_box_all">
+							<div class="in_radio">
+								<div class="in_rad">
+									<input type="radio" name="" value="Y">
+									<label for="">Y</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+								<div class="in_rad">
+									<input type="radio" name="" value="N">
+									<label for="">N</label>
+								</div>
+							</div>
+						</div>
+     </li>
+
+					<!-- start -->
+					<li class="li_standard">
+						<div class="in_box3">
+							<div class="in_tit">
+								title1
+							</div>
+							<div class="in_type1">
+								<input type="text" value="" placeholder="입력하세요">
+							</div>
+						</div>
+						<ul class="btn_group">
+							<li class="btn_search">
+								<a href="javascript:">조회</a>
+							</li>
+							<li class="btn_write">
+								<a href="javascript:">신규</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="in_box3">
+							<div class="in_tit">
+								title2
+							</div>
+							<div class="in_type1">
+								<input type="text" value="" placeholder="입력하세요">
+							</div>
+						</div>
+					</li>
+     <!-- // end-->
+					<!-- start -->
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ button2</p>
+						<div class="in_btn">
+							<ul class="btn_group">
+								<li>
+									<a href="javascript:;" onclick="">조회</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">등록</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- // end -->
+					<!-- start-->
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ button3</p>
+						<div class="in_btn3">
+							<ul class="btn_group">
+								<li>
+									<a href="javascript:;" onclick="">조회</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">등록</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">부결</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- // end -->
+					<!-- start -->
+					<li>
+						<p style="margin:0; font-weight:600; color:#313ab1; margin-top:10px;"> ※ button4</p>
+						<div class="in_btn4">
+							<ul class="btn_group">
+								<li>
+									<a href="javascript:;" onclick="">조회</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">등록</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">부결</a>
+								</li>
+								<li>
+									<a href="javascript:;" onclick="">????</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- //한줄 조회, 등록, 부결, ??버튼-->
+				</ul>
+   </div>
+   <div class="notice" style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    BUTTON LAYOUT1
+   </div>
+   <div class="btn_wrap btn_padding">
+    <ul>
+     <li class="btns btn_c5"><a href="javascript:;">인쇄</a></li>
+     <li class="btns btn_c2"><a href="javascript:;">저장</a></li>
+     <li class="btns btn_c3"><a href="javascript:;">삭제</a></li>
+    </ul>
+   </div>
+   <div class="notice" style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    BUTTON LAYOUT2
+   </div>
+   <div class="btn_wrap">
+    <ul>
+     <li class="btns btn_c1"><button onclcik="">초기화</button></li>
+     <li class="btns btn_c2"><button onclcik="">저장</button></li>
+     <li class="btns btn_c3"><button onclcik="">삭제</button></li>
+     <li class="btns btn_c4"><button onclcik="">제출</button></li>
+    </ul>
+   </div>
+			<div class="border_wrap"></div>
+			<!-- // input end-->
+   <div class="notice" style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    DROP LAYOUT <br>(아래 화살표 영역을 클릭하면 밑으로 펼쳐집니다.)
+   </div>
+			<!-- drop start  -->
+			<div class="btn_drop">
+				<div class="btn_drop_wrap">
+					<a href="javascript:;">
+						<i class="ic_drop"></i>
+					</a>
+				</div>
+			</div>
+			<!-- // drop end -->
+			<div class="form_wrap drop_wrap">
+				<ul>
+					<li>
+						<div class="in_box1">
+							<div class="in_tit">
+								title1
+							</div>
+							<div class="in_mid_box">
+								<div class="in_type2">
+									<input type="text" value="2000-00-00" placeholder="">
+									<a href="javascript:;">
+										<img src="../img/img_day.png" alt="달력">
+									</a>
+								</div>
+								<span>
+									~
+								</span>
+								<div class="in_type2">
+									<input type="text" value="2000-00-00" placeholder="">
+									<a href="javascript:;">
+										<img src="../img/img_day.png" alt="달력">
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_box1">
+							<div class="in_tit">
+								title2
+							</div>
+							<div class="in_type1">
+								<input type="text" value="" placeholder="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_box4">
+							<div class="in_tit">
+								title3
+							</div>
+							<div class="in_mid_list">
+								<ul>
+									<li>
+										<select name="" id="">
+											<option value="" selected="selected">시도</option>
+											<option value="강원">강원</option>
+											<option value="경기">경기</option>
+											<option value="경남">경남</option>
+											<option value="경북">경북</option>
+											<option value="광주">광주</option>
+											<option value="대구">대구</option>
+											<option value="대전">대전</option>
+											<option value="부산">부산</option>
+											<option value="서울">서울</option>
+											<option value="세종시">세종시</option>
+											<option value="울산">울산</option>
+											<option value="인천">인천</option>
+											<option value="전남">전남</option>
+											<option value="전북">전북</option>
+											<option value="제주">제주</option>
+											<option value="충남">충남</option>
+											<option value="충북">충북</option>
+										</select>
+									</li>
+									<li>
+										<select name="" id="">
+											<option value="">시군구</option>
+										</select>
+									</li>
+									<li>
+										<select name="" id="">
+											<option value="">동</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+   </div>
+   <div class="notice" style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    CHECKBOX LAYOUT
+   </div>
+			<div class="all_check_wrap">
+				<input type="checkbox" id="all_chk" name="" value="">
+    			<label for="all_chk">전체선택</label>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

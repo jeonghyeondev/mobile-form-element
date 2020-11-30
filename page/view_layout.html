@@ -1,0 +1,1128 @@
+<!doctype html>
+<head>
+ <title>Form Layout</title>
+ <meta charset="utf-8">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=dege;">
+ <meta name="viewport"
+  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ <meta name="format-detection" content="telephone=no">
+ <link rel="stylesheet" href="../css/common.css">
+ <script src="../js/jquery-1.11.0.js"></script>
+ <script src="../js/html5shiv.js"></script>
+ <script src="../js/common.js"></script>
+</head>
+<body>
+ <div class="wrap">
+  <header class="header">
+   <div class="header_wrap">
+    <div class="header_menu">
+     <a href="javascript:;">
+      <img src="../img/img_menu.png" alt="메뉴">
+     </a>
+    </div>
+    <h1 class="header_tit">
+     <a href="../index.html">
+     FORM LAYOUT
+     </a>
+    </h1>
+   </div>
+   <div class="nav">
+    <div class="nav_wrap">
+     <div class="nav_user">
+      <div class="user_inner">
+       <div class="user_name">
+        <span class="user_company">Company</span>
+        <i class="ic_uesr"></i> 관리자 (admin)
+       </div>
+      </div>
+      <div class="nav_close">
+       <a href="javascript:;">
+        <img src="../img/gnb_btn_close.png" alt="메뉴닫기">
+       </a>
+      </div>
+     </div>
+     <div class="nav_btn">
+      <ul>
+       <li>
+        <a href="javascript:;"><i class="ic_logout"></i>로그아웃</a>
+       </li>
+       <li>
+        <a href="javascript:;"><i class="ic_refresh"></i>회원정보수정</a>
+       </li>
+      </ul>
+     </div>
+     <div class="nav_menu">
+      <ul class="nav_menu_list">
+       <li>
+        <a class="two_menu" href="#">MENU1</a>
+        <ul class="nav_sub_list">
+         <li><a href="javascript:;">SUBMENU1</a></li>
+         <li><a href="javascript:;">SUBMENU2</a></li>
+        </ul>
+       </li>
+       <li>
+        <a class="two_menu" href="#">MENU2</a>
+        <ul class="nav_sub_list">
+         <li><a href="javascript:;">SUBMENU1</a></li>
+         <li><a href="javascript:;">SUBMENU2</a></li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="nav_bg"></div>
+   </div>
+  </header>
+		<div class="btn_top none">
+			<a href="">
+				<img src="../img/btn_top.png" alt="위로">
+			</a>
+		</div>
+		<section class="content">
+   <div class="notice"
+    style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    VIEW LAYOUT1 <br>(상세 화면)
+   </div>
+			<div class="form_wrap">
+				<ul>
+					<li>
+						<div class="in_row_box">
+							<div class="in_row_box_tit">
+								[상세화면 타이틀]
+							</div>
+							<div class="in_row_cont">
+								<ul>
+									<li>
+										<div class="in_row">
+											<div class="in_tit">
+												<label>
+													버튼 없는 input <span>*</span>
+												</label>
+											</div>
+											<div class="in_row_input1">
+												<input type="text" class="form-control" id="" value="">
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>
+													버튼 포함 input <span>*</span>
+												</label>
+											</div>
+											<div class="in_type2">
+												<input type="text" class="" id="RESERVE_DT" value="">
+												<a href="javascript:;">
+													<img src="../img/img_day.png" alt="달력">
+												</a>
+											</div>
+										</div>
+										<div class="in_box5 mb4">
+											<div class="in_custom1">
+												<div class="in_tit">
+													1번째
+												</div>
+												<div class="in_type1">
+													<input type="number" class="t_right" id="" placeholder="(명)">
+												</div>
+											</div>
+											<div class="in_custom1">
+												<div class="in_tit tac">
+													2번째
+												</div>
+												<div class="in_type1">
+													<input type="number" class="t_right" id="" placeholder="(명)">
+												</div>
+											</div>
+										</div>
+										<div class="in_box5 mb4">
+											<div class="in_custom1">
+												<div class="in_tit">
+													<label>select1 <span>*</span></label>
+												</div>
+												<div class="in_type1">
+													<select class="" id="">
+														<option value="">선택</option>
+														<option value="0700">07:00</option>
+														<option value="0730">07:30</option>
+														<option value="0800">08:00</option>
+														<option value="0830">08:30</option>
+														<option value="0900">09:00</option>
+														<option value="0930">09:30</option>
+														<option value="1000">10:00</option>
+														<option value="1030">10:30</option>
+														<option value="1100">11:00</option>
+														<option value="1130">11:30</option>
+														<option value="1200">12:00</option>
+														<option value="1230">12:30</option>
+														<option value="1300">13:00</option>
+														<option value="1330">13:30</option>
+														<option value="1400">14:00</option>
+														<option value="1430">14:30</option>
+														<option value="1500">15:00</option>
+														<option value="1530">15:30</option>
+														<option value="1600">16:00</option>
+														<option value="1630">16:30</option>
+														<option value="1700">17:00</option>
+														<option value="1730">17:30</option>
+														<option value="1800">18:00</option>
+														<option value="1830">18:30</option>
+														<option value="1900">19:00</option>
+														<option value="1930">19:30</option>
+														<option value="2000">20:00</option>
+														<option value="2030">20:30</option>
+														<option value="2100">21:00</option>
+														<option value="2130">21:30</option>
+													</select>
+												</div>
+											</div>
+											<div class="in_custom1">
+												<div class="in_tit tac">
+             select2
+												</div>
+												<div class="in_type1">
+													<select class="" id="">
+														<option value="">선택</option>
+														<option value="0700">07:00</option>
+														<option value="0730">07:30</option>
+														<option value="0800">08:00</option>
+														<option value="0830">08:30</option>
+														<option value="0900">09:00</option>
+														<option value="0930">09:30</option>
+														<option value="1000">10:00</option>
+														<option value="1030">10:30</option>
+														<option value="1100">11:00</option>
+														<option value="1130">11:30</option>
+														<option value="1200">12:00</option>
+														<option value="1230">12:30</option>
+														<option value="1300">13:00</option>
+														<option value="1330">13:30</option>
+														<option value="1400">14:00</option>
+														<option value="1430">14:30</option>
+														<option value="1500">15:00</option>
+														<option value="1530">15:30</option>
+														<option value="1600">16:00</option>
+														<option value="1630">16:30</option>
+														<option value="1700">17:00</option>
+														<option value="1730">17:30</option>
+														<option value="1800">18:00</option>
+														<option value="1830">18:30</option>
+														<option value="1900">19:00</option>
+														<option value="1930">19:30</option>
+														<option value="2000">20:00</option>
+														<option value="2030">20:30</option>
+														<option value="2100">21:00</option>
+														<option value="2130">21:30</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+													radio1
+												</div>
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+             radio2
+												</div>
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="N">
+														<label for="">N</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+             radio3
+												</div>
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="N">
+														<label for="">N</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="N">
+														<label for="">N</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+													check1
+												</div>
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+             check2
+												</div>
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">Y</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">N</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_box6">
+												<div class="in_tit">
+             check3
+												</div>
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">Y</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">N</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" id="chk" name="" value="">
+														<label for="">N</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>select1 <span>*</span></label>
+											</div>
+											<div class="in_row_input1">
+												<select class="form-control">
+													<option value="1">1 - 첫번째 목록</option>
+													<option value="2">2 - 두번째 목록</option>
+													<option value="3">3 - 세번째 목록</option>
+												</select>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>select2 <span>*</span></label>
+											</div>
+											<div class="in_row_input2">
+												<ul>
+													<li>
+														<select class="form-control">
+															<option value="1">1 - 첫번째 목록</option>
+															<option value="2">2 - 두번째 목록</option>
+															<option value="3">3 - 세번째 목록</option>
+														</select>
+													</li>
+													<li>
+														<select class="form-control">
+															<option value="1">1 - 첫번째 목록</option>
+															<option value="2">2 - 두번째 목록</option>
+															<option value="3">3 - 세번째 목록</option>
+														</select>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>select3 <span>*</span></label>
+											</div>
+											<div class="in_row_input3">
+												<ul>
+													<li>
+														<select class="form-control">
+															<option value="1">1 - 첫번째 목록</option>
+															<option value="2">2 - 두번째 목록</option>
+															<option value="3">3 - 세번째 목록</option>
+														</select>
+													</li>
+													<li>
+														<select class="form-control">
+															<option value="1">1 - 첫번째 목록</option>
+															<option value="2">2 - 두번째 목록</option>
+															<option value="3">3 - 세번째 목록</option>
+														</select>
+													</li>
+													<li>
+														<select class="form-control">
+															<option value="1">1 - 첫번째 목록</option>
+															<option value="2">2 - 두번째 목록</option>
+															<option value="3">3 - 세번째 목록</option>
+														</select>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>input1 <span>*</span></label>
+											</div>
+											<div class="in_row_input1">
+												<input type="text" name="" value="" placeholder="입력하세요">
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>input2<span>*</span></label>
+											</div>
+											<div class="in_row_input2">
+												<ul>
+													<li>
+														<div class="in_type1">
+															<input type="text" name="" value="" placeholder="입력하세요">
+														</div>
+													</li>
+													<li>
+														<div class="in_type2 cursor">
+															<input type="text" name="" value="" id="" placeholder="입력하세요">
+															<a href="javascript:;">
+																<img src="../img/btn_search.png" alt="검색">
+															</a>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>input3 <span>*</span></label>
+											</div>
+											<div class="in_row_input3">
+												<ul>
+													<li>
+														<div class="in_type1">
+															<input type="text" name="" value="" placeholder="입력하세요">
+														</div>
+													</li>
+													<li>
+														<div class="in_type2 cursor">
+															<input type="text" id="B_MANAGEMENT_NO" placeholder="">
+															<a href="javascript:;">
+																<img src="../img/btn_search.png" alt="검색">
+															</a>
+														</div>
+													</li>
+													<li>
+														<div class="in_type1">
+															<input type="text" name="" value="" placeholder="입력하세요">
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>radio1 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>radio2 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>radio3 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_radio">
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_rad">
+														<input type="radio" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>check1 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>check2 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="in_row mb4">
+											<div class="in_tit">
+												<label>check3 <span>*</span></label>
+											</div>
+											<div class="in_box_all">
+												<div class="in_check">
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+													<div class="in_chk">
+														<input type="checkbox" name="" value="Y">
+														<label for="">Y</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="pt4">
+						<div class="in_box1">
+							<div class="in_tit">
+								title1
+							</div>
+							<div class="in_type1">
+								<input type="text" id="" class="form-control" value="content1" readonly="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_box1">
+							<div class="in_tit">
+								title2
+							</div>
+							<div class="in_type1">
+								<input type="text" id="" class="form-control" value="content2" readonly="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+   <div class="notice"
+    style="color:#000; background: #ececec; margin: 10px; padding: 10px; font-size: 16px;font-weight: bold; ">
+    VIEW LAYOUT2 <br>(상세 화면)
+   </div>
+			<div class="view_wrap">
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>title <span>*</span></h3>
+						<div class="btns">
+							<a href="javascript:;" onclick="">추가</a>
+						</div>
+					</div>
+					<div class="item_cont">
+						<div class="item_list">
+							<ul>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+           title1
+										</div>
+										<div class="in_type2">
+											<input type="text" id="" class="hidden " value="">
+											<input type="text" id="" class="" value="">
+											<a href="javascript:;" onclick="" style="line-height: 65px">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title2
+										</div>
+										<div class="in_type2">
+											<input type="hidden" id="" class="" value="">
+											<input type="hidden" id="" class="" value="">
+											<input type="text" id="" class="" value="" readonly="">
+											<a href="javascript:;" onclick="">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title3
+										</div>
+										<div class="in_type1">
+											<input type="number" id="" value="" placeholder="입력하세요" onkeydown="">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title4
+										</div>
+										<div class="in_type1">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title5
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick="">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box6">
+										<div class="in_tit">
+											radio <span>*</span>
+										</div>
+										<div class="in_radio">
+											<div class="in_rad">
+												<input type="radio" name="" value="Y">
+												<label for="">Y</label>
+											</div>
+											<div class="in_rad">
+												<input type="radio" name="" value="N">
+												<label for="">N</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box6">
+										<div class="in_tit">
+										 check <span>*</span>
+										</div>
+										<div class="in_check">
+											<div class="in_chk">
+												<input type="checkbox" id="chk" name="" value="">
+												<label for="">Y</label>
+											</div>
+											<div class="in_chk">
+												<input type="checkbox" id="chk" name="" value="">
+												<label for="">N</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_btn">
+										<a href="javascript:;" onclick="">삭제</a>
+									</div>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<div class="no_data">
+										데이터를 추가하세요.
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- start -->
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>title <span>*</span></h3>
+					</div>
+					<div class="item_cont">
+						<div class="in_box_all padding8" onchange="">
+							<select name="" id="">
+								<option value="">아무개 &gt;&gt; 아무개 참조 : 아무개</option>
+								<option value="">아무개 &gt;&gt; 아무개 참조 : 아무개</option>
+								<option value="">아무개 &gt;&gt; 아무개 참조 : 아무개</option>
+							</select>
+						</div>
+						<div class="item_sub_cont">
+							<div class="item_tit">
+								<h3>title <span>*</span></h3>
+								<div class="btns">
+									<a href="javascript:;" onclick="">add</a>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<table class="table_wrap">
+										<colgroup>
+											<col width="20%">
+											<col width="30%">
+											<col width="20%">
+											<col width="30%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>title1</th>
+												<td colspan="3">content1</td>
+											</tr>
+											<tr>
+												<th>title2</th>
+												<td>content2</td>
+												<th>data</th>
+												<td>2099-99-99</td>
+											</tr>
+											<tr>
+												<th colspan="4">content3</th>
+											</tr>
+											<tr>
+												<td colspan="4">content4</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="list_btn">
+										<a href="javascript:;" onclick="">검색</a>
+										<a href="javascript:;" onclcik="">삭제</a>
+									</div>
+								</li>
+								<li>
+									<table class="table_wrap">
+										<colgroup>
+											<col width="20%">
+											<col width="30%">
+											<col width="20%">
+											<col width="30%">
+										</colgroup>
+										<tbody>
+           <tr>
+            <th>title1</th>
+            <td colspan="3">content1</td>
+           </tr>
+           <tr>
+            <th>title2</th>
+            <td>content2</td>
+            <th>data</th>
+            <td>2099-99-99</td>
+           </tr>
+           <tr>
+            <th colspan="4">content3</th>
+           </tr>
+           <tr>
+            <td colspan="4">content4</td>
+           </tr>
+										</tbody>
+									</table>
+									<div class="list_btn">
+										<a href="javascript:;" onclick="">검색</a>
+										<a href="javascript:;" onclcik="">삭제</a>
+									</div>
+								</li>
+								<li>
+									<div class="no_data">
+										데이터를 추가해주세요.
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="item_sub_cont">
+							<div class="item_tit">
+								<h3>참조테이블 <span>*</span></h3>
+								<div class="btns">
+									<a href="javascript:;" onclick="">참조테이블 추가</a>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<table class="table_wrap">
+										<colgroup>
+											<col width="20%">
+											<col width="*">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>순번</th>
+												<td>1</td>
+											</tr>
+											<tr>
+												<th>이름</th>
+												<td>아무개</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="list_btn">
+										<a href="javascript:;" onclick="">검색</a>
+										<a href="javascript:;" onclick="">삭제</a>
+									</div>
+								</li>
+								<li>
+									<table class="table_wrap">
+										<colgroup>
+											<col width="20%">
+											<col width="*">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>순번</th>
+												<td>1</td>
+											</tr>
+											<tr>
+												<th>이름</th>
+												<td>아무개</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="list_btn">
+										<a href="javascript:;" onclick="">검색</a>
+										<a href="javascript:;" onclick="">삭제</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // end -->
+				<!-- start -->
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>title <span>*</span></h3>
+						<div class="btns">
+							<a href="javascript:;" onclick="">추가</a>
+						</div>
+					</div>
+					<div class="item_cont">
+						<div class="item_list">
+							<ul>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title1 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick="">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title2 <span>*</span>
+										</div>
+										<div class="in_type1">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title3
+										</div>
+										<div class="in_type1">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_btn">
+										<a href="javascript:;">삭제</a>
+									</div>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title1 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick=";">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title2 <span>*</span>
+										</div>
+										<div class="in_type1">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title3
+										</div>
+										<div class="in_type1">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_btn">
+										<a href="javascript:;">삭제</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // end -->
+				<!-- start -->
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>title <span>*</span></h3>
+						<div class="btns">
+							<a href="javascript:;" onclick="">추가</a>
+						</div>
+					</div>
+					<div class="item_cont">
+						<div class="item_list">
+							<ul>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title1 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick=";">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title2 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick="">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit2">
+											long long title
+										</div>
+										<div class="in_type3">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_btn">
+										<a href="javascript:;">삭제</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // end -->
+				<!-- start -->
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>title <span>*</span></h3>
+						<div class="btns">
+							<a href="javascript:;" onclick="">추가</a>
+						</div>
+					</div>
+					<div class="item_cont">
+						<div class="item_list">
+							<ul>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title1 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick=";">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit">
+											title2 <span>*</span>
+										</div>
+										<div class="in_type2">
+											<input type="text" value="" placeholder="입력하세요">
+											<a href="javascript:;" onclick="">
+												<img src="../img/btn_search.png" alt="검색">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="in_box1">
+										<div class="in_tit2">
+           long long title
+										</div>
+										<div class="in_type3">
+											<input type="number" value="" placeholder="입력하세요">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_btn">
+										<a href="javascript:;">삭제</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // end -->
+				<!-- start -->
+				<div class="item_wrap">
+					<div class="item_tit">
+						<h3>파일등록 <span>*</span></h3>
+						<div class="btns">
+							<a href="javascript:;" onclick="">파일추가</a>
+						</div>
+					</div>
+					<div class="item_cont">
+						<div class="file_list">
+							<p>첨부파일</p>
+							<ul>
+								<li>
+									<table class="table_wrap">
+										<colgroup>
+											<col width="70%">
+											<col width="15%">
+											<col width="15%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<td>aaa.xlsx</td>
+												<td class="btn_download">
+													<a href="javascript:;">
+														<img src="../img/btn_download.png" alt="다운로드">
+													</a>
+												</td>
+												<td class="btn_delete">
+													<a href="javascript:;">
+														<img src="../img/btn_delete.png" alt="삭제">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>bbb.xlsx</td>
+												<td class="btn_download">
+													<a href="javascript:;">
+														<img src="../img/btn_download.png" alt="다운로드">
+													</a>
+												</td>
+												<td class="btn_delete">
+													<a href="javascript:;">
+														<img src="../img/btn_delete.png" alt="삭제">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>ccc.xlsx</td>
+												<td class="btn_download">
+													<a href="javascript:;">
+														<img src="../img/btn_download.png" alt="다운로드">
+													</a>
+												</td>
+												<td class="btn_delete">
+													<a href="javascript:;">
+														<img src="../img/btn_delete.png" alt="삭제">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // end -->
+			</div>
+		</section>
+	</div>
+</body>
+</html>

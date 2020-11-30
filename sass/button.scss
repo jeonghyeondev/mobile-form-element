@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import 'variable.scss';
+@import 'mixin.scss';
+
+// Extra Small
+.btnXS {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  font-size: 12px !important;
+  @include button;
+}
+// Small
+.btnS {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  font-size: 13px !important;
+  @include button;
+}
+// Default
+.btnD {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  font-size: 14px !important;
+  @include button;
+}
+// Big
+.btnB {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+  font-size: 15px !important;
+  @include button;
+}
